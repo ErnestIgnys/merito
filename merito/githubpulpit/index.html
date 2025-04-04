@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Formularz kontaktowy</h2>
+
+		<form id="contactForm" method="get">
+			<label for="name">Imię:</label>
+			<input type="text" name="name" id="name" required><br><br>
+	
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" id="email" required><br><br>
+
+			<label for="phone">Numer telefonu:</label>
+			<input type="phone" name="phone" id="phone" required><br><br>
+
+			<label for="wiek">Wiek:</label>
+			<input type="number" name="wiek" id="wiek" required><br><br>
+	
+
+			<label>Płeć:</label>
+			<div class="radio-group">
+				<input type="radio" name="gender" id="male" value="Mężczyzna" required>
+				<label for="male">Mężczyzna</label>
+
+				<input type="radio" name="gender" id="female" value="Kobieta">
+				<label for="female">Kobieta</label>
+
+				<input type="radio" name="gender" id="female" value="Kobieta">
+				<label for="female">Baśniowe stwory</label>
+			</div>
+
+			<label>Zainteresowania:</label>
+			<div class="checkbox-group">
+				<input type="checkbox" name="interests" id="sport" value="Sport">
+				<label for="sport">Sport</label>
+
+				<input type="checkbox" name="interests" id="music" value="Muzyka">
+				<label for="music">Muzyka</label>
+
+				<input type="checkbox" name="interests" id="movies" value="Filmy">
+				<label for="movies">Filmy</label>
+			</div>
+	
+			
+			<label for="movies">Zgoda na kontakt</label>
+			<input type="checkbox" name="kontakt" id="kontakt" value="kontakt">
+
+			<label for="message">Wiadomość:</label><br>
+			<textarea name="message" id="message" cols="50" rows="4"></textarea><br><br>
+	
+			<button type="submit">Wyślij</button>
+		 </form>
+	
+    
+	 <div id="result"></div>
+	</div>
+	 <script src="app.js"></script>
+</body>
+</html>
