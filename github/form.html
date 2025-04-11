@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane</title>
+</head>
+<body>
+  <h2>Formularz kontaktowy</h2>
+  <form action="data.php" method="get">
+    <label for="name">Imię</label><br><br>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="email">Email:</label><br><br>
+    <input type="email" name="email" id="email" required><br><br>
+
+    <label for="phone">Numer telefonu:</label><br><br>
+    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"><br><br>
+
+    <label for="subject">Temat wiadomości:</label><br><br>
+    <select name="subject" id="subject" required>
+        <option value="general">Ogólny</option>
+        <option value="inqury">Zapytanie</option>
+        <option value="feedback">Opinia</option>
+    </select><br><br>
+
+    <label for="message">Wiadomość:</label><br><br>
+    <textarea name="message" id="message" rows="4" required></textarea><br><br>
+
+    <label>Preferencje kontaktu</label><br><br>
+    <input type="radio" name="contact_preference" value="email" checked> E-mail
+    <input type="radio" name="contact_preference" value="phone"> Telefon<br><br>
+
+    <input type="submit" value="Wyślij">
+  </form>    
+</body>
+</html>
